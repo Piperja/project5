@@ -2,6 +2,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
-body {
+
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #FF3F3C;
+}
+
+form {
+    width: 465px;
+    margin-left: 230px;
+    padding-bottom: 100px;
+    background: lightgray;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.button {
+    background: var(--accent-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-color: #FF3F3C;
+    width: 150px;
+    height: 50px;
     font-family: "Inter", sans-serif;
+}
+
+.email {
+    width: 300px;
+    height: 50px;
+    border-color: #E9E9E9;
+    background: #E9E9E9;
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    background: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main {
+    background: url('polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.hero {
+    text-align: center;
+    min-height: 800px;
+}
+
+.details p {
+    text-align: left;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 55px;
+}
+
+.details ul {
+    width: 700px;
+    margin-left: 110px;
+    padding-bottom: 40px;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 50px;
+}
+
+.details ul li.qr {
+    background: url('qrcode-solid.svg') no-repeat center left;
+}
+
+.details ul li.photo {
+    background: url('photo-film-solid.svg') no-repeat center left;
+}
+
+.details ul li.cloud {
+    background: url('cloud-arrow-up-solid.svg') no-repeat center left;
+}
+
+.details ul li.wifi {
+    background: url('wifi-solid.svg') no-repeat center left;
 }
